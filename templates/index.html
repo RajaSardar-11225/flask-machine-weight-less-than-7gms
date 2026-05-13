@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Production Dashboard</title>
+</head>
+<style>
+    table
+    {
+        width: 100%;
+        display: none;
+    }
+
+    th, td
+    {
+        border: 1px solid red;
+        text-align: center;
+    }
+</style>
+<body>
+
+    <h1>Check last 7 weights which are below 7gms.</h1>
+
+    <button onclick="open_button()">CLick To See</button>
+
+    <table id="my_table">
+        <tr>
+            <th>ID</th>
+            <th>Batch</th>
+            <th>Machine</th>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Line</th>
+            <th>Product</th>
+            <th>Weight</th>
+            <th>Operator</th>
+        </tr>
+
+        <hr>
+
+        {% for row in ans%}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>
+            <td>{{row[5]}}</td>
+            <td>{{row[6]}}</td>
+            <td>{{row[7]}}</td>
+            <td>{{row[8]}}</td>
+            <td>{{row[9]}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+
+    <script>
+        function open_button(){
+            document.getElementById("my_table").style.display="table"
+        }
+    </script>
+
+</body>
+</html>
