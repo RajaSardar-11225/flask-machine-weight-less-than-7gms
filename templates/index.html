@@ -57,8 +57,9 @@
     <hr>
 
     <h2>Data more than 7.5gms</h2>
+    <button onclick="open_button2()">CLick To See</button>
 
-    <table>
+    <table id="my_table2">
         <tr>
             <th>ID</th>
             <th>Batch</th>
@@ -91,6 +92,10 @@
     <script>
         function open_button(){
             document.getElementById("my_table").style.display="table"
+        }
+
+        function open_button2(){
+            document.getElementById("my_table2").style.display="table"
         }
     </script>
 
