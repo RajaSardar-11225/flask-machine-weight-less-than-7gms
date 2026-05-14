@@ -6,7 +6,7 @@ user_name = 'dmeadmin'
 password = 'Agri@774Safe#14'
 
 connecting = f'''
-DRIVER={{ODBC Driver 18 for SQL Server}};
+DRIVER={{ODBC Driver 17 for SQL Server}};
 SERVER={server};
 DATABASE={database};
 UID={user_name};
