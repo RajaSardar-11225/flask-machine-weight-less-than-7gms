@@ -1,4 +1,4 @@
-import pyodbc
+import pymssql
 
 server = 'sdplserver.database.windows.net'
 database = 'dme'
@@ -27,7 +27,7 @@ app = Flask("__name__")
 
 def home():
 
-    now_connect = pyodbc.connect(connecting)
+    now_connect = pymssql.connect(connecting)
     cursor = now_connect.cursor()
     query = """select top 7 * from Daily_Packing_Data where Location ='Agarpara' and Weight_of_Bag<7 order by Weight_of_Bag DESC;"""
     cursor.execute(query)
