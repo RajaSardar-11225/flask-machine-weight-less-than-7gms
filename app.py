@@ -1,9 +1,9 @@
 import pymssql
 
-server = 'sdplserver.database.windows.net'
-database = 'dme'
-user_name = 'dmeadmin'
-password = 'Agri@774Safe#14'
+server = 'myserver.database.windows.net'
+database = 'dnjghmmbvgkjhe'
+user_name = 'dhjfgj,in'
+password = 'Aghfyyrfuggiyfy5r5614'
 
 
 #######################################################################################
